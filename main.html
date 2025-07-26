@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main page</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="main">
+<h1 class="welcome">Welcome to skinify &#10052;</h1>
+<p class="p1">ur simplified skincare guide &#10024;</p>
+    <h2 class="know"> 👋🏼 Hyy!<span id="username" ></span>&heartsuit;</h2>
+
+<h3 class="know">Know ur skintype</h3 >
+<div class="skintype">
+
+    <div class="skincard">
+        <img src="dry.jpg" alt="dry-skintype">
+        <h3>Dry Skin type</h3>
+        <p>skin feels rough,flaky and tight</p>
+    </div>
+    <div class="skincard">
+        <img src="oily.jpg" alt="dry-skintype">
+        <h3>Oily Skin type</h3>
+        <p>skin feels shiny,excess oil is produced</p>
+    </div>
+    <div class="skincard">
+        <img src="comb.jpg" alt="dry-skintype">
+        <h3>Combination Skin type</h3>
+        <p>oily in T zone,normal in others</p>
+    </div>
+    <div class="skincard">
+        <img src="normal.jpg" alt="dry-skintype">
+        <h3>Normal Skin type</h3>
+        <p>clear and not too oily or dry.</p>
+    </div></div>
+
+<div class="unsure">
+    <h2>if u r still unsure lets do a test </h2>
+    <ol>
+        <li>wash ur face at nyt ,dont apply anything keep it overnyt</li>
+        <li>next morning take a plain tissue paper</li>
+        <li> tap it on ur chin,nose,forehead,cheeks</li>
+    </ol>
+
+    <table>
+        <thead><tr>
+            <th>what u see </th>
+            <th>ur skintype</th></tr>
+        </thead>  
+        <tbody>
+            <tr>
+                <td>oily in most areas ----> </td>
+                <td>oily skin</td>
+            </tr>
+            <tr>
+                <td>oily in T zone(forehead,nose,chin) --> </td>
+                <td>combination skin</td>
+            </tr>
+            <tr>
+                <td>no oil,feels dry ----> </td>
+                <td>dry skin</td>
+            </tr>
+            <tr>
+                <td>no oil,clear balanced  ----></td>
+                <td>normal skin</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+
+<p>Let’s build your personalized skincare routine!</p>
+<button class="rtn" onclick="routine()"
+   >YEAH!</button>
+
+
+</div>
+<script>
+    const name=localStorage.getItem("username");
+document.getElementById("username").textContent=" "+name || "there!";
+
+function routine(){
+    window.location.href="routine.html";
+}
+</script>
+<br>
+
+<a href="start.html">go back</a>
+</body>
+</html>

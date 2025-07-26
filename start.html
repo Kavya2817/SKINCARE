@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKINIFY</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="start-page">
+    <div class="header">
+    <h1 class="h1">Welcome to Skinify ...</h1>
+    <p class="p">Your Personal Skincare guide</p>
+    <p>are you ready for ur Glow-Up journey</p></div>
+
+    <div class="input">
+        <input placeholder="enter ur name" class="name">
+        
+    </div>
+
+    <button class="start" onclick="go_main()">Start</button>
+</div>
+    <script>
+function go_main(){
+    const name=document.querySelector(".name");
+    const value=name.value;
+    localStorage.setItem("username",value);
+    window.location.href="main.html";
+}
+
+
+    </script>
+
+</body>
+</html>

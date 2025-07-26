@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personalised routine</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <div class="routine">
+        <div class="click">
+        <h2>click on ur skintype</h2>
+        <button class="r1" onclick="urroutine('oily')">oily</button>
+         <button class="r1" onclick="urroutine('normal')">normal</button>
+          <button  class="r1"onclick="urroutine('combination')">combination</button>
+           <button  class="r1" onclick="urroutine('dry')">dry</button>
+           </div>
+
+           <div id="result" class="result"></div>
+           <br>
+           <br>
+
+           <a href="info.html"> info</a>
+           <br>
+<script>
+    
+    function urroutine( type){
+        const routine = document.getElementById("result");
+        if(type=="oily"){
+            routine.innerHTML=`
+            <h3>oily skin routine </h3>
+            <ul>
+                <li><h3>cleanser</h3>: use a gently foaming cleanser</li>
+                <li><h3>moisturizer</h3>: gel based light weight moisturizer</li>
+                <li><h3>sunscreen</h3>:non greasy lightweight </li>
+                </ul>
+       
+            
+            
+            
+            `;
+            }
+             else if (type=="dry"){
+            routine.innerHTML=`
+            <h3>dry skin routine </h3>
+            <ul>
+                <li><h3>cleanser</h3>: hydrating cleanser</li>
+                <li><h3>moisturizer</h3>: thick and creamy moisturizer</li>
+                <li><h3>sunscreen</h3>: moisturizing spf</li>
+                </ul>
+            `;
+           
+
+    }
+    else if(type=="combination"){
+            routine.innerHTML=`
+            <h3>combination skin routine </h3>
+            <ul>
+                <li><h3>cleanser</h3>: use a gently foaming cleanser</li>
+                <li><h3>moisturizer</h3>: gel or cream moisturizer</li>
+                <li><h3>sunscreen</h3>:gel based spf sunscreen </li>
+                </ul>
+      
+                
+            `;
+            
+            
+            }
+             else if(type=="normal"){
+            routine.innerHTML=`
+            <h3>normal skin routine </h3>
+            <ul>
+                <li><h3>cleanser</h3>: mild foaming cleanser</li>
+                <li><h3>moisturizer</h3>: normal moisturizer</li>
+                <li><h3>sunscreen</h3>:any spf sunscreen </li>
+                </ul>
+    
+            ` ;
+          
+            }
+    }
+</script>
+
+<a href="main.html">go back</a>
+
+</body>
+</html>
